@@ -1,3 +1,3 @@
-FROM tomcat:8.5-jre8
+FROM  registry.redhat.io/jboss-webserver-3/webserver31-tomcat8-openshift:latest
 
-COPY ./dist /usr/local/tomcat/webapps/ROOT
+COPY ./dist /opt/webserver/webapps/ROOT
